@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <style>
             body{
                 background-color: #f3e0e2;
@@ -17,6 +18,7 @@
                 overflow: hidden;
                 box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.2);
                 clear:both;
+                text-align: center;
             }
             form.myform > div{
                 width: 50%;
@@ -29,15 +31,67 @@
             div.pink{
                 background-image: -webkit-linear-gradient(left, #FF464c,#ff416c);
                 color: #fff;
-                text-align: center;
+                
                 text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
                 
+            }
+            a.social_icons{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                display: inline-block;
+                border-radius: 40px;
+                border: 1px solid #303030;
+                color: #303030;
+                font-size: 1.5em;
+            }
+            .myform input[type="text"],.myform input[type="password"]{ /* decended selector*/
+                width: 97%;
+                padding: 10px 0px 10px 10px;
+                margin: 5px 0px;
+                border: none;
+                background: #EFEFEF;
+            }
+            .myform input:focus{
+                border: none !important;
+            }
+            .myform input[type="submit"]{
+                background: #ff4a27;
+                color: #FFF;
+                border: none;
+                font-weight: bold;
+                padding: 10px 30px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .forget{
+                color: #303030;
+                text-decoration: none;
             }
         </style>
     </head>
     <body>
         <form class="myform">
-            <div class="white">1</div>
+            <div class="white">
+                <div style="margin: 120px 60px;  border: 1px dashed black;">
+                    <h1>Login</h1>
+                    <a href="#" class="social_icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social_icons">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <p>or use your account</p>
+                    <input type="text" placeholder="Email" name="Email"/>
+                    <input type="password" placeholder="Password" name="password"/>
+                    <div style="margin: 10px 0px;">
+                        <a href="#" class="forget">Forget your password?</a>
+                    </div>
+                    <div>
+                        <input type="submit" value="LOG IN" name="submit">
+                    </div>
+                </div>
+            </div>
             <div class="pink">
                 <div style="margin:200px 60px;">
                     <h1>HTML CSS Login Form</h1>
@@ -46,5 +100,6 @@
             </div>
             
         </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
