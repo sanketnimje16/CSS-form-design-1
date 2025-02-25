@@ -4,8 +4,47 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+            body{
+                background-color: #f3e0e2;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            form.myform{
+                width: 60%;
+                height: 600px;
+                margin: 100px auto;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.2);
+                clear:both;
+            }
+            form.myform > div{
+                width: 50%;
+                float: left;
+                height: 100%;
+            }
+            div.white{
+                background-color: #ffffff;
+            }
+            div.pink{
+                background-image: -webkit-linear-gradient(left, #FF464c,#ff416c);
+                color: #fff;
+                text-align: center;
+                text-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+                
+            }
+        </style>
     </head>
     <body>
-        
+        <form class="myform">
+            <div class="white">1</div>
+            <div class="pink">
+                <div style="margin:200px 60px;">
+                    <h1>HTML CSS Login Form</h1>
+                    <p>This login form is created using HTML and CSS. For social icons, FontAwesome is used.</p>
+                </div>
+            </div>
+            
+        </form>
     </body>
 </html>
